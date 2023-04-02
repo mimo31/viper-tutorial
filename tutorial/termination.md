@@ -426,7 +426,7 @@ We have chosen this approach for the following reasons (but are happy to receive
 
 ### Checking Method Termination {#term_methods}
 
-The currently implemented approach to checking termination of methods is similar to the previously described approach for functions: decreases clauses can be specified at the position of preconditions; if provided, **Viper checks that the termination measure decreases in each directly or indirectly recursive method invocation, and that other method calls, as well as loops, terminate**. As [previous described](#term_fct_calls), *function* applications inside methods are *not* checked for termination.
+The currently implemented approach to checking termination of methods is similar to the previously described approach for functions: decreases clauses can be specified at the position of preconditions; if provided, **Viper checks that the termination measure decreases in each directly or indirectly recursive method invocation, and that other method calls, as well as loops, terminate**. As [previously described](#term_fct_calls), *function* applications inside methods are *not* checked for termination.
 
 A straightforward example is method `sum`, shown next:
 
